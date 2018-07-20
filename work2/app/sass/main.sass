@@ -1,0 +1,328 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.grid // Пользовательские стили
+	display: grid
+
+.main-header
+	min-height: 90vh
+	background-size: cover
+	background-position: center
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: #293A43
+		opacity: .6
+
+.header-logo
+	margin: 10px
+	position: absolute
+	left: 10%
+	top: 10%
+	h1
+		
+		font-size: 46px
+		color: $accessory
+		margin: 0
+		line-height: 40px
+	p
+		color: #fff
+		font-size: 12px
+		letter-spacing: 4px
+		margin: 0
+.header-content
+	color: #fff
+	top: 12%
+	grid-template-columns: repeat(5, 1fr)
+	grid-gap: 50px
+	position: absolute
+	right: 10%
+	text-align: right
+.nav-menu
+	text-decoration: none
+	color: #fff
+	&:hover
+		color: $accessory
+
+// .previous-slider
+// 	margin: 10px
+// 	color: $accessory
+// 	display: inline
+// 	z-index: 1
+// 	position: absolute
+// 	top: 50%
+// 	right: 65%
+
+// 	a
+// 		color: $accessory
+
+.youcando
+	padding: 20px
+	max-width: 1200px
+	padding-top: 40px
+	margin: auto 
+	grid-template-columns: 1fr 1fr
+	grid-gap: $gutter
+	background-color: $dark
+.image-block
+	background-size: cover
+	background-position: center
+	min-height: 40vh
+.description
+	display: inline
+	padding: 0 20px 20px 0
+	h2
+		margin: 0
+		padding-bottom: 20px
+		font-size: 31px
+		color: $dark_blue
+	h3
+		padding-bottom: 20px
+		color: #666666
+		font-weight: 800
+	p
+		padding-bottom: 20px
+		font-size: 16px
+	a
+		color: $dark_blue
+		text-decoration: none
+		span
+			border-bottom: 3px solid
+.graph
+
+	padding: 20px
+	max-width: 1200px
+	margin: auto
+	grid-template-columns: 1fr 1fr
+	grid-gap: $gutter
+	background-color: $dark
+.graph-left
+	background-size: cover
+	background-position: center
+	padding-bottom: 20px
+.graph-right
+    padding: 0px 0 20px 20px
+    display: inline
+    h2
+        font-size: 31px
+        color: $dark_blue
+        margin: 0
+        padding-bottom: 20px
+    h3
+        font-weight: 800
+        color: #666666
+        padding-bottom: 20px
+    p
+        font-size: 16px
+        padding-bottom: 20px
+    a
+        text-decoration: none
+        color: $dark_blue
+        span
+            border-bottom: 3px solid;
+
+.businessplan
+	padding: 20px 150px
+	grid-template-columns: 1fr 1fr
+	grid-gap: $gutter
+	background-color: $dark_blue
+	align-items: center
+
+.text
+	padding: 30px
+	text-align: center
+
+	p
+		
+		font-size: 16px
+		color: #fff
+.button
+	text-decoration: none
+	display: inline-block
+	border: none
+	color: $dark_blue
+	padding: 10px 20px
+	font-weight: 800
+	font-size: 20px
+	border-radius: 4px
+	text-align: center
+	button
+		background-color: $accessory
+.services
+	max-width: 1200px
+	margin: auto
+	text-align: center
+.services-header
+	padding: 20px
+	margin: auto
+	h2
+		font-size: 31px
+		color: $dark_blue
+	p
+		margin-top: 20px
+		font-size: 16px
+		color: #333333
+.services-items
+	grid-template-columns: 1fr 1fr 1fr
+	grid-gap: 60px //уменьшить в медиа
+.blog-item
+	grid-template-rows: 1fr 1fr
+	
+	&:hover
+		text-decoration: none
+	&-img
+		height: 290px
+		background-size: cover
+		background-position: center
+	&-content
+		padding: 20px
+		text-align: center
+		align-content: center
+		h3
+			font-size: 21px
+			color: $dark_blue
+			margin: 0
+		p
+			margin-top: 20px
+			font-size: 16px
+			color: #333333
+.counter
+	background-color: $dark_blue
+	color: #fff
+	margin: auto
+	padding: 30px
+.counter-items
+	grid-template-columns: 1fr 1fr 1fr 1fr
+	text-align: center
+	grid-gap: 120px //Уменьшить в медиа
+	margin: auto //Убрать в медиа 
+.counter-item
+	span
+		font-size: 48px
+		font-weight: 800
+	p
+		font-size: 12px
+.video-blog
+	background-color: $dark
+.video-consulting
+	max-width: 1200px
+	margin: auto
+	padding-top: $gutter
+	grid-template-columns: 1fr 1fr
+	grid-gap: $gutter
+.video-content
+	padding: 0px 0 20px 20px
+    display: inline
+	h2
+		font-size: 31px
+		color: $dark_blue
+		margin: 0
+		padding-bottom: 20px
+	h3
+		font-weight: 800
+		color: #666666
+		padding-bottom: 20px
+	p
+		font-size: 16px
+		padding-bottom: 20px
+	a
+		text-decoration: none
+		color: $dark_blue
+	span
+		border-bottom: 3px solid
+.quote
+	background-color: $quote
+.quote-content
+	max-width: 1200px
+	margin: auto
+	text-align: center
+	color: #fff
+	padding: 40px
+	h2
+		font-size: 68px
+	p
+		font-size: 20px
+		font-weight: 800
+		line-height: 2.7
+		text-align: center
+	span
+		padding-top: 30px
+		font-size: 25px
+.contacts-content
+	max-width: 1200px
+	margin: auto
+	text-align: center
+	padding: 20px
+	h3
+		font-size: 31px
+		color: $dark_blue
+		margin: 0
+		padding-bottom: 20px
+	p
+		margin-top: 20px
+		font-size: 16px
+		color: #333333
+
+#gmap_canvas // главный div
+	height: 240px
+	max-width: 380px
+	img
+		max-width: none !important
+		background: none !important
+#gmap_canvas2 // главный div
+	height: 240px
+	max-width: 380px
+	img
+		max-width: none !important
+		background: none !important
+#gmap_canvas3 // главный div
+	height: 240px
+	max-width: 380px
+	img
+		max-width: none !important
+		background: none !important
+.contacts-maps
+	padding: 50px
+	max-width: 1200px
+	margin: auto
+	grid-template-columns: 1fr 1fr 1fr
+	grid-gap: $gutter
+.geo
+	font-size: 16px
+	color: $dark_blue
+	background-color: $dark
+	a
+		font-weight: 800
+		color: $dark_blue
+	i
+		margin-right: 20px
+.main-footer
+	background-color: $dark_blue
+	grid-template-columns: 1fr 1fr
+	grid-gap: $gutter
+	padding: 30px
+	color: #fff
+.copyright
+	display: inline-block
+	span
+		color: $accessory
+.icons
+	text-align: right
+	display: block
+	a
+		margin-right: 50px
+	i
+		&:hover
+			color: $accessory
+			font-weight: 800
+
+
+
+@import "media" // Всегда в конце
